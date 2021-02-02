@@ -3,7 +3,7 @@
 % Function to compute, display, and save a Sierpinski triangle defined by
 % three given points of the 2D or 3D space, at any iteration number / depth level.
 %
-% Author & support : nicolas.douillet (at) free.fr, 2020.
+% Author & support : nicolas.douillet (at) free.fr, 2020-2021.
 %
 %% Syntax
 %
@@ -82,6 +82,16 @@ axis equal;
 view(2);
 
 %% Example #4
+% Computes and displays a random 3D double Sierpinski triangle at iteration 2.
+
+M1 = cat(2,rand(1,2),0);
+M2 = cat(2,rand(1,2),0);
+M3 = cat(2,rand(1,2),0);
+Sierpinski_triangle(2,M1,M2,M3,'double');
+axis equal;
+view(2);
+
+%% Example #5
 % Computes, displays, and saves the 3D (M1,M2,M3) Sierpinski triangle at iteration 4.
 
 M1 = [0 1 1];
