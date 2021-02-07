@@ -104,7 +104,7 @@ function [V, T] = Sierpinski_triangle(nb_it, M1, M2, M3, type, option_display)
 
 
 %% Input parsing
-assert(nargin < 6,'Too many input arguments.');
+assert(nargin < 7,'Too many input arguments.');
 
 if ~nargin
     nb_it = 3;
